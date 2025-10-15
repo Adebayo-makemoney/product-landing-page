@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="LuminaSphere - Smart lighting reimagined with intelligent, adaptive lighting that enhances your mood, productivity, and well-being.">
-    <title>LuminaSphere - Smart Lighting Reimagined</title>
+    <meta name="keywords" content="smart lighting, home automation, LED lights, circadian lighting, smart home">
+    <meta name="author" content="LuminaSphere">
+    <title>LuminaSphere - Smart Lighting Reimagined | Transform Your Home with Intelligent Lighting</title>
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -15,88 +17,115 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header -->
-    <header>
+    <header id="header">
         <div class="container">
-            <nav>
-                <div class="logo">LuminaSphere</div>
-                <ul class="nav-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav role="navigation" aria-label="Main navigation">
+                <div class="logo" aria-label="LuminaSphere Home">LuminaSphere</div>
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#features" role="menuitem">Features</a></li>
+                    <li role="none"><a href="#how-it-works" role="menuitem">How It Works</a></li>
+                    <li role="none"><a href="#testimonials" role="menuitem">Testimonials</a></li>
+                    <li role="none"><a href="#pricing" role="menuitem">Pricing</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
                 </ul>
-                <a href="#pricing" class="cta-button">Pre-order Now</a>
-                <div class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <a href="#pricing" class="cta-button nav-cta" aria-label="Pre-order LuminaSphere now">Pre-order Now</a>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="main-content">
         <div class="container">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Smart Lighting Reimagined</h1>
                 <p>Transform your home with intelligent, adaptive lighting that enhances your mood, productivity, and well-being. Experience the future of home illumination today.</p>
                 <div class="hero-buttons">
-                    <a href="#pricing" class="cta-button primary">Get Started</a>
-                    <a href="#features" class="cta-button secondary">Learn More</a>
+                    <a href="#pricing" class="cta-button primary" aria-label="Get started with LuminaSphere">Get Started</a>
+                    <a href="#features" class="cta-button secondary" aria-label="Learn more about LuminaSphere features">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Energy Saved</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Star Rating</span>
+                    </div>
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="LuminaSphere Smart Lighting System">
+                <img 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                    srcset="
+                        https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80 400w,
+                        https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80 800w,
+                        https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80 1200w
+                    "
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    alt="LuminaSphere Smart Lighting System showing modern LED lights in a contemporary living room setting"
+                    loading="lazy"
+                >
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section id="features" class="features" aria-labelledby="features-heading">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Revolutionary Features</h2>
+                <h2 id="features-heading">Revolutionary Features</h2>
                 <p>Discover how LuminaSphere transforms your living space with cutting-edge technology</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-sun"></i>
                     </div>
                     <h3>Circadian Rhythm Sync</h3>
                     <p>Automatically adjusts color temperature throughout the day to support your natural sleep-wake cycle.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-palette"></i>
                     </div>
                     <h3>16 Million Colors</h3>
                     <p>Choose from an infinite palette of colors to match your mood, decor, or activity.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3>Voice Control</h3>
                     <p>Works with Alexa, Google Assistant, and Siri for hands-free control of your lighting.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-icon">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3>Smartphone App</h3>
                     <p>Control your lights from anywhere with our intuitive mobile application.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="feature-icon">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Energy Efficient</h3>
                     <p>Uses 80% less energy than traditional bulbs while lasting up to 25 years.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="feature-icon">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-music"></i>
                     </div>
                     <h3>Music Sync</h3>
@@ -107,25 +136,25 @@
     </section>
 
     <!-- How It Works -->
-    <section id="how-it-works" class="how-it-works">
+    <section id="how-it-works" class="how-it-works" aria-labelledby="how-it-works-heading">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>How It Works</h2>
+                <h2 id="how-it-works-heading">How It Works</h2>
                 <p>Setting up your LuminaSphere is quick and easy</p>
             </div>
             <div class="steps">
                 <div class="step" data-aos="fade-up" data-aos-delay="100">
-                    <div class="step-number">1</div>
+                    <div class="step-number" aria-hidden="true">1</div>
                     <h3>Unbox & Install</h3>
                     <p>Simply screw in the bulbs like any standard light bulb - no electrician needed.</p>
                 </div>
                 <div class="step" data-aos="fade-up" data-aos-delay="200">
-                    <div class="step-number">2</div>
+                    <div class="step-number" aria-hidden="true">2</div>
                     <h3>Connect to App</h3>
                     <p>Download our app and connect your bulbs to your home Wi-Fi in minutes.</p>
                 </div>
                 <div class="step" data-aos="fade-up" data-aos-delay="300">
-                    <div class="step-number">3</div>
+                    <div class="step-number" aria-hidden="true">3</div>
                     <h3>Customize & Enjoy</h3>
                     <p>Create scenes, schedules, and automations that fit your lifestyle perfectly.</p>
                 </div>
@@ -134,10 +163,10 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>What Our Customers Say</h2>
+                <h2 id="testimonials-heading">What Our Customers Say</h2>
                 <p>Join thousands of happy customers who have transformed their homes</p>
             </div>
             <div class="testimonial-grid">
@@ -146,7 +175,7 @@
                         "The circadian rhythm feature has completely changed my sleep quality. I wake up feeling refreshed and energized every morning!"
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">SJ</div>
+                        <div class="author-avatar" aria-hidden="true">SJ</div>
                         <div class="author-info">
                             <h4>Sarah Johnson</h4>
                             <p>Interior Designer</p>
@@ -158,7 +187,7 @@
                         "I love how I can create different lighting scenes for movie nights, dinner parties, or just relaxing. It's like having multiple rooms in one!"
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">MR</div>
+                        <div class="author-avatar" aria-hidden="true">MR</div>
                         <div class="author-info">
                             <h4>Michael Rodriguez</h4>
                             <p>Tech Enthusiast</p>
@@ -170,7 +199,7 @@
                         "The energy savings alone paid for the system in less than a year. Plus, the colors are so vibrant and the app is incredibly intuitive."
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-avatar">EC</div>
+                        <div class="author-avatar" aria-hidden="true">EC</div>
                         <div class="author-info">
                             <h4>Emily Chen</h4>
                             <p>Homeowner</p>
@@ -182,10 +211,10 @@
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="pricing">
+    <section id="pricing" class="pricing" aria-labelledby="pricing-heading">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Simple, Transparent Pricing</h2>
+                <h2 id="pricing-heading">Simple, Transparent Pricing</h2>
                 <p>Choose the perfect package for your home</p>
             </div>
             <div class="pricing-grid">
@@ -193,10 +222,10 @@
                     <h3>Starter Kit</h3>
                     <div class="price">$99<span>/kit</span></div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 2 Smart Bulbs</li>
-                        <li><i class="fas fa-check"></i> Basic App Features</li>
-                        <li><i class="fas fa-check"></i> Voice Control</li>
-                        <li><i class="fas fa-check"></i> 1-Year Warranty</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 2 Smart Bulbs</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Basic App Features</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Voice Control</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 1-Year Warranty</li>
                     </ul>
                     <a href="#contact" class="cta-button">Get Started</a>
                 </div>
@@ -204,11 +233,11 @@
                     <h3>Home Bundle</h3>
                     <div class="price">$199<span>/bundle</span></div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 6 Smart Bulbs</li>
-                        <li><i class="fas fa-check"></i> All App Features</li>
-                        <li><i class="fas fa-check"></i> Voice Control + Music Sync</li>
-                        <li><i class="fas fa-check"></i> Advanced Scheduling</li>
-                        <li><i class="fas fa-check"></i> 3-Year Warranty</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 6 Smart Bulbs</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> All App Features</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Voice Control + Music Sync</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Advanced Scheduling</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 3-Year Warranty</li>
                     </ul>
                     <a href="#contact" class="cta-button">Get Started</a>
                 </div>
@@ -216,11 +245,11 @@
                     <h3>Pro System</h3>
                     <div class="price">$349<span>/system</span></div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 12 Smart Bulbs</li>
-                        <li><i class="fas fa-check"></i> All Features + Priority Support</li>
-                        <li><i class="fas fa-check"></i> Custom Color Palettes</li>
-                        <li><i class="fas fa-check"></i> Advanced Automation</li>
-                        <li><i class="fas fa-check"></i> 5-Year Warranty</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 12 Smart Bulbs</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> All Features + Priority Support</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Custom Color Palettes</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Advanced Automation</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> 5-Year Warranty</li>
                     </ul>
                     <a href="#contact" class="cta-button">Get Started</a>
                 </div>
@@ -229,61 +258,67 @@
     </section>
 
     <!-- Contact Form -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
         <div class="container">
             <div class="section-title" data-aos="fade-up">
-                <h2>Get in Touch</h2>
+                <h2 id="contact-heading">Get in Touch</h2>
                 <p>Have questions? Reach out to our team or pre-order your LuminaSphere today</p>
             </div>
             <div class="contact-form" data-aos="fade-up" data-aos-delay="100">
-                <div class="success-message" id="successMessage">
-                    Thank you for your message! We'll get back to you soon.
+                <div class="success-message" id="successMessage" role="alert" aria-live="polite">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    Thank you for your message! We'll get back to you within 24 hours.
                 </div>
-                <form id="contactForm">
+                <form id="contactForm" novalidate>
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Your Name">
-                        <div class="error" id="nameError">Please enter your name</div>
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required aria-describedby="nameError">
+                        <div class="error" id="nameError" role="alert">Please enter your full name</div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" class="form-control" placeholder="your.email@example.com">
-                        <div class="error" id="emailError">Please enter a valid email address</div>
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required aria-describedby="emailError">
+                        <div class="error" id="emailError" role="alert">Please enter a valid email address</div>
                     </div>
                     <div class="form-group">
-                        <label for="package">Package Interest</label>
-                        <select id="package" class="form-control">
+                        <label for="package">Package Interest *</label>
+                        <select id="package" class="form-control" required aria-describedby="packageError">
                             <option value="">Select a package</option>
                             <option value="starter">Starter Kit</option>
                             <option value="home">Home Bundle</option>
                             <option value="pro">Pro System</option>
                         </select>
-                        <div class="error" id="packageError">Please select a package</div>
+                        <div class="error" id="packageError" role="alert">Please select a package you're interested in</div>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" rows="5" placeholder="Your message..."></textarea>
-                        <div class="error" id="messageError">Please enter your message</div>
+                        <label for="message">Message *</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Your message..." required aria-describedby="messageError"></textarea>
+                        <div class="error" id="messageError" role="alert">Please enter your message</div>
                     </div>
-                    <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+                    <button type="submit" class="cta-button" style="width: 100%;">
+                        <span class="button-text">Send Message</span>
+                        <span class="button-loading" aria-hidden="true">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>LuminaSphere</h3>
                     <p>Transforming homes with intelligent lighting solutions that enhance well-being and save energy.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Connect on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://github.com" aria-label="View our GitHub repository"><i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -315,13 +350,18 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 LuminaSphere. All rights reserved.</p>
-                <a href="#" class="back-to-top" id="backToTop">
-                    <i class="fas fa-arrow-up"></i> Back to Top
+                <p>&copy; 2023 LuminaSphere. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+                <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+                    <i class="fas fa-arrow-up" aria-hidden="true"></i> Back to Top
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button class="floating-back-to-top" id="floatingBackToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
