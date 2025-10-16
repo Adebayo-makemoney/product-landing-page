@@ -2,7 +2,7 @@
 
 A modern, responsive landing page for smart lighting products with animations, form validation, and excellent user experience across all devices.
 
-![LuminaSphere Hero](./Screenshot.jpeg)
+![LuminaSphere Hero](./Screenshots.jpeg)
 
 ## Features
 
